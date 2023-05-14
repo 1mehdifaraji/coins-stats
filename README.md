@@ -16,6 +16,9 @@ Get latest cryptocurrencies prices in USD as a chrome extension .
 
 4. CoinsStats chrome extension is ready to use .
 
+![coins-stats-ext](https://github.com/1mehdifaraji/coins-stats/assets/63982703/af6bf66e-6533-4f2a-ba26-7a6ca673e348)
+
+
 ## Features
 
 - Darkmode
