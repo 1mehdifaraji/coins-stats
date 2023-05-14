@@ -20,7 +20,7 @@ Get latest cryptocurrencies prices in USD as a chrome extension .
 
 ## Preview
 
-You can also checkout the website version of [CoinsStats](https://coins-stats.s3-website.ir-thr-at1.arvanstorage.ir)
+You can also checkout the website version of [CoinsStats](https://coins-stats.s3-website.ir-thr-at1.arvanstorage.ir) .
 
 ## Features
 
