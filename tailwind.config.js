@@ -3,6 +3,9 @@ module.exports = {
   darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    screens: {
+      largeScreen: "500px",
+    },
     fontSize: {
       xs: "0.6rem",
       sm: "0.8rem",
