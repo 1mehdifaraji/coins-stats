@@ -1,3 +1,15 @@
 {
-  "language": "لغة"
+  "language": "لغة",
+  "wallet-addresses": "عناوين المحفظة",
+  "favourites": "المفضلة",
+  "name": "اسم",
+  "24h-change": "ساعة التغيير ۲۴",
+  "price": "سعر",
+  "search": "يبحث",
+  "no-addresses-found": "لم يتم العثور على عناوين",
+  "add-address": "اضف عنوان",
+  "add-wallet-address": "أضف عنوان المحفظة",
+  "address": "عنوان",
+  "wallet-address-title": "عنوان المحفظة",
+  "error-fetching-data": "فشل الحصول على أحدث إحصائيات العملات المعدنية ، يرجى المحاولة مرة أخرى في وقت لاحق"
 }

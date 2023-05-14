@@ -1,3 +1,15 @@
 {
-  "language": "زبان"
+  "language": "زبان",
+  "wallet-addresses": "آدرس ولت ها",
+  "favourites": "موردعلاقه",
+  "name": "نام",
+  "24h-change": "تغییرات ۲۴ ساعت",
+  "price": "قیمت",
+  "search": "جستجو",
+  "no-addresses-found": "آدرسی یافت نشد",
+  "add-address": "افزودن آدرس",
+  "add-wallet-address": "افزودن آدرس ولت",
+  "address": "آدرس",
+  "wallet-address-title": "عنوان آدرس ولت",
+  "error-fetching-data": "دریافت آخرین آمار سکه ها ناموفق بود، لطفاً بعداً دوباره تلاش کنید"
 }

@@ -1,0 +1,12 @@
+{
+  "name": "CoinsStats",
+  "version": "1.0.0",
+  "description": "Get the latest cryptocurrencies prices in US dollar",
+  "manifest_version": 3,
+  "author": "Mehdi Faraji",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "CoinsStats",
+    "default_icon": "logo512.png"
+  }
+}

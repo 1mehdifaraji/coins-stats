@@ -1,3 +1,15 @@
 {
-  "language": "sprache"
+  "language": "sprache",
+  "wallet-addresses": "wallet adressen",
+  "favourites": "favoriten",
+  "name": "name",
+  "24h-change": "24h ändern",
+  "price": "preis",
+  "search": "suchen",
+  "no-addresses-found": "keine adressen gefunden",
+  "add-address": "adresse hinzufügen",
+  "add-wallet-address": "brieftaschenadresse hinzufügen",
+  "address": "adresse",
+  "wallet-address-title": "titel der wallet-adresse",
+  "error-fetching-data": "Das Abrufen der neuesten Statistiken der Münzen ist fehlgeschlagen. Bitte versuchen Sie es später erneut"
 }

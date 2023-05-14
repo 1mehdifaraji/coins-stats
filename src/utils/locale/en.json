@@ -1,3 +1,15 @@
 {
-  "language": "language"
+  "language": "language",
+  "wallet-addresses": "wallet addresses",
+  "favourites": "favourites",
+  "name": "name",
+  "24h-change": "24h Change",
+  "price": "price",
+  "search": "search",
+  "no-addresses-found": "no addresses found",
+  "add-address": "add address",
+  "add-wallet-address": "add wallet address",
+  "address": "address",
+  "wallet-address-title": "wallet address title",
+  "error-fetching-data": "Getting coins latest stats failed , please try again later"
 }

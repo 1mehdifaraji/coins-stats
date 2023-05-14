@@ -8,7 +8,7 @@ const CoinsLoading: FC = () => (
     animate={{ opacity: 1 }}
     transition={{ duration: 0.65, ease: "easeInOut" }}
     exit={{ opacity: 0 }}
-    className="flex items-center justify-between py-3 border-b border-gray-200 dark:border-gray-800"
+    className="flex items-center justify-between py-3 transition-colors duration-100 border-b border-gray-200 dark:border-gray-800"
   >
     <div>
       <div className="flex items-center space-x-5 w-60">
