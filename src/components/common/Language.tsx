@@ -13,7 +13,7 @@ const Language: FC<LanguageProps> = ({
   label,
   currentLanguage,
 }) => (
-  <div
+  <li
     data-testid="language"
     onClick={onClick}
     className={`cursor-pointer rounded-lg p-1 dark:text-white text-dark ${
@@ -21,7 +21,7 @@ const Language: FC<LanguageProps> = ({
     }`}
   >
     {label}
-  </div>
+  </li>
 );
 
 export default Language;

@@ -25,7 +25,7 @@ const Coin: FC<CoinProps> = ({
   price_change_percentage_24h,
   current_price,
 }) => (
-  <motion.div
+  <motion.li
     initial={{ y: 40, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ duration: 0.55, ease: "easeIn" }}
@@ -153,7 +153,7 @@ const Coin: FC<CoinProps> = ({
       </div>
       <div>${handleDecimals(current_price)}</div>
     </div>
-  </motion.div>
+  </motion.li>
 );
 
 export default Coin;

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Skeleton from "./common/Skeleton";
 
 const CoinsLoading: FC = () => (
-  <motion.div
+  <motion.li
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 0.65, ease: "easeInOut" }}
@@ -20,7 +20,7 @@ const CoinsLoading: FC = () => (
       <Skeleton className="w-12 h-5" />
       <Skeleton className="w-20 h-5" />
     </div>
-  </motion.div>
+  </motion.li>
 );
 
 export default CoinsLoading;

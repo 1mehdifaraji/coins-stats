@@ -180,41 +180,45 @@ const Home: FC = () => {
 
       <AnimatePresence>
         {isLoading ? (
-          Array.from(Array(10).keys()).map((_, index: number) => {
-            return <CoinsLoading key={index} />;
-          })
+          <ul>
+            {Array.from(Array(10).keys()).map((_, index: number) => {
+              return <CoinsLoading key={index} />;
+            })}
+          </ul>
         ) : isError ? (
           <Error t={t} />
         ) : (
-          data.map(
-            (
-              {
-                id,
-                name,
-                image,
-                fav,
-                current_price,
-                price_change_percentage_24h,
-                symbol,
-              }: Coin,
-              index: number
-            ) => {
-              return (
-                <Coin
-                  key={index}
-                  symbol={symbol}
-                  toggle={toggleFavourites}
-                  price_change_percentage_24h={price_change_percentage_24h}
-                  current_price={current_price}
-                  fav={fav}
-                  name={name}
-                  image={image}
-                  index={index}
-                  onClick={() => addToFav({ name, fav })}
-                />
-              );
-            }
-          )
+          <ul>
+            {data.map(
+              (
+                {
+                  id,
+                  name,
+                  image,
+                  fav,
+                  current_price,
+                  price_change_percentage_24h,
+                  symbol,
+                }: Coin,
+                index: number
+              ) => {
+                return (
+                  <Coin
+                    key={index}
+                    symbol={symbol}
+                    toggle={toggleFavourites}
+                    price_change_percentage_24h={price_change_percentage_24h}
+                    current_price={current_price}
+                    fav={fav}
+                    name={name}
+                    image={image}
+                    index={index}
+                    onClick={() => addToFav({ name, fav })}
+                  />
+                );
+              }
+            )}
+          </ul>
         )}
       </AnimatePresence>
       {searchValue?.length === 0 && !toggleFavourites && !isError && (
