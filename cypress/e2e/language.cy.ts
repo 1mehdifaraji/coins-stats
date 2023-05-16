@@ -1,13 +1,16 @@
 describe("Multilanguage", () => {
   it("Check all 4 languages", () => {
-    cy.visit(Cypress.env("localhost"));
+    cy.visit("/");
 
     const openDrawerBtn =
       "#root > :nth-child(1) > :nth-child(3) > :nth-child(1)";
     const closeDrawerBtn = '[data-testid="drawer"] > .absolute';
 
     cy.get(openDrawerBtn).click();
-    cy.get(":nth-child(2) > .flex > :nth-child(2)").click();
+    cy.get(
+      '[data-testid="drawer"] > :nth-child(2) > .flex > :nth-child(2)'
+    ).click();
+
     cy.get('[data-testid="drawer"] > :nth-child(2) > :nth-child(1)').should(
       "contain.text",
       "زبان"
