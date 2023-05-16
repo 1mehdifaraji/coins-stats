@@ -1,6 +1,6 @@
 describe("Wallet addresses", () => {
   it("Add remove wallet addresses", () => {
-    cy.visit(Cypress.env("localhost"));
+    cy.visit("/");
 
     const openDrawerBtn =
       "#root > :nth-child(1) > :nth-child(3) > :nth-child(1)";
