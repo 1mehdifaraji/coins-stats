@@ -13,14 +13,14 @@ interface WalletAddressProps {
 const WalletAddress: FC<WalletAddressProps> = ({
   onCopy,
   onDelete,
-  index,
   title,
   value,
+  index,
   id,
 }) => {
   return (
     <li
-      key={index}
+      key={id}
       className={`flex items-start justify-between relative border border-gray-100 dark:border-gray-600 rounded-xl p-2 ${
         index !== 0 && "mt-2"
       }`}
