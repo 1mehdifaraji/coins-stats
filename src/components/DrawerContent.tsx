@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, KeyboardEvent, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 import { capitalize } from "../utils/utils";
@@ -57,6 +57,12 @@ const DrawerContent: FC<DrawerContentProps> = ({
     clearInputValues();
   };
 
+  const handleKeyPress = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (walletAddressInput?.length > 0 && walletAddressTitleInput?.length > 0) {
+      if (e.key === "Enter") submitWalletAddress();
+    }
+  };
+
   return (
     <>
       <Modal
@@ -72,6 +78,7 @@ const DrawerContent: FC<DrawerContentProps> = ({
             placeholder={String(capitalize(t("wallet-address-title")))}
             name="wallet-address-title"
             maxLength={20}
+            onKeyDown={handleKeyPress}
           />
           <Input
             value={walletAddressInput}
@@ -79,6 +86,7 @@ const DrawerContent: FC<DrawerContentProps> = ({
             placeholder={String(capitalize(t("address")))}
             name="wallet-address"
             className="mt-2"
+            onKeyDown={handleKeyPress}
           />
           <Button
             disabled={
