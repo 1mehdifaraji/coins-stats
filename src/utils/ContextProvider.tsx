@@ -1,9 +1,18 @@
-import { createContext, FC, ReactNode } from "react";
+import {
+  createContext,
+  Dispatch,
+  FC,
+  ReactNode,
+  SetStateAction,
+  useState,
+} from "react";
 import { useLocalStorage } from "./hooks/useLocaleStorage";
 import i18n from "./i18n";
 
 interface ContextInitialState {
   darkmode: boolean;
+  drawerIsOpen: boolean;
+  setDrawerIsOpen: Dispatch<SetStateAction<boolean>>;
   toggleDarkmode: () => void;
   lang: string;
   updateLang: (value: string) => void;
@@ -41,6 +50,8 @@ export const languages = [
 
 const initialState: ContextInitialState = {
   darkmode: false,
+  drawerIsOpen: false,
+  setDrawerIsOpen: () => {},
   toggleDarkmode: () => {},
   walletAddresses: [],
   removeWalletAddress: () => {},
@@ -52,6 +63,7 @@ const initialState: ContextInitialState = {
 export const Context = createContext<ContextInitialState>(initialState);
 
 const ContextProvider: FC<ContextProviderProps> = ({ children }) => {
+  const [drawerIsOpen, setDrawerIsOpen] = useState<boolean>(false);
   const [darkmode, setDarkmode] = useLocalStorage("darkmode", false);
   const [lang, setLang] = useLocalStorage("lang", "en");
   const [walletAddresses, setWalletAddresses] = useLocalStorage(
@@ -86,6 +98,8 @@ const ContextProvider: FC<ContextProviderProps> = ({ children }) => {
 
   const contextValues = () => ({
     darkmode,
+    drawerIsOpen,
+    setDrawerIsOpen,
     toggleDarkmode,
     walletAddresses,
     removeWalletAddress,
