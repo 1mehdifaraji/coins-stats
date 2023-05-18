@@ -25,7 +25,7 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose, children, title }) => {
       >
         {children}
         {title && (
-          <Text className="absolute top-4 left-1/2 transform -translate-x-1/2 text-center text-lg font-bold text-gray-500">
+          <Text className="absolute top-5 left-1/2 transform -translate-x-1/2 text-center text-sm font-bold text-gray-500">
             {title}
           </Text>
         )}

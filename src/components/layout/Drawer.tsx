@@ -26,7 +26,7 @@ const Drawer: FC<DrawerProps> = ({ children, isOpen, setIsOpen }) => {
       </div>
       <aside
         data-testid="drawer"
-        className={`transform left-0 top-0 w-2/3 h-full min-w-max bg-white dark:bg-darkLight fixed overflow-auto transition-all duration-500 ease-in-out z-30 ${
+        className={`transform left-0 top-0 h-full w-11/12 xs:w-10/12 sm:w-4/6 md:w-2/4 lg:w-2/6 bg-white dark:bg-darkLight fixed overflow-auto transition-all duration-500 ease-in-out z-30 ${
           !isOpen && "-translate-x-full"
         }`}
       >
